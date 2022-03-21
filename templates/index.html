@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='estilo.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        
+        <ul class="nav justify-content-end">
+
+            <li class="nav-link">
+                <img class="logo2" src="{{ url_for('static', filename='img/logo2.svg') }}" alt="">
+                <img class="logo" src="{{ url_for('static', filename='img/logo.svg') }}" alt="">
+            </li>
+
+            
+
+            <li class="nav-item">
+                
+                <a class="nav-link " href="{{ url_for('login') }}">Login</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('register') }}">Registrar</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/sobre">Sobre o projeto</a>
+            </li>
+            
+            <img src="{{ url_for('static', filename='img/fundo.svg') }}" alt="">
+            
+            
+
+        </ul>
+
+    </nav>
+    <h1 class="texto1">O mundo mágico da geografia </h1> 
+    <h2>precisa ser explorado. aceite <br> esse desafio, venha aprender e se <br> divertir com geogo!</h2>
+</body>
+
+</html>
